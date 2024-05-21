@@ -1,0 +1,15 @@
+# Exclude #
+###########
+*
+
+# Whitelist Exceptions #
+########################
+!*/
+!*.py
+!*.css
+!*.html
+!requirements.txt
+.git
+.dockerignore
+venv
+__pycache__

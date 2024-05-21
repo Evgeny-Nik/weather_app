@@ -1,0 +1,26 @@
+# Exclude #
+###########
+*
+
+# Whitelist Exceptions #
+########################
+!*/
+!*.md
+!.gitignore
+!.myfuncs
+!*.c
+!*.h
+!*.sh
+!*.py
+!*.jpg
+!*.css
+!*.html
+!*.yml
+!*.conf
+!Dockerfile
+!docker-compose.yml
+!requirements.txt
+!*.tf
+!.dockerignore
+.idea/
+.terraform/

@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  weather_app:
+    restart: always
+    build: 
+      context: ./weather_app
+
+  nginx:
+    container_name: nginx
+    restart: always
+    build: 
+      context: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - weather_app
