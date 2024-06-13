@@ -43,3 +43,4 @@ jobs:
         message: "changed version of shop app to ${{ github.run_number }}"
         pathspec_error_handling: exitImmediately
         token: ${{ secrets.GIT_TOKEN }}
+        
