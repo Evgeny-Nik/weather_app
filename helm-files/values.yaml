@@ -1,0 +1,24 @@
+weatherapp:
+  env:
+    kafkaHost: kafka.default.svc.cluster.local
+    kafkaPort: '29092'
+    mongoHost: mongodb-release.default.svc.cluster.local
+    mongoPort: '27017'
+    mongoUser: root
+  image:
+    repository: evgenyniko/platform_app
+    tag: 0.0.1
+  replicas: 4
+weatherapp-service:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  type: ClusterIP
+weatherapp-ingress:
+  ports:
+  - port: 8000
+    host:
+
+kubernetesClusterDomain: cluster.local
+namespace: default

@@ -16,9 +16,9 @@
 !*.css
 !*.html
 !*.yml
+!*.yaml
 !*.conf
 !Dockerfile
-!docker-compose.yml
 !requirements.txt
 !*.tf
 !.dockerignore
